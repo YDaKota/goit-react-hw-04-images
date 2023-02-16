@@ -1,9 +1,9 @@
 import { ColorRing } from 'react-loader-spinner';
 
-const Loader = () => {
+const Loader = ({ loading }) => {
   return (
     <ColorRing
-          visible={true}
+          visible={loading}
           height="80"
           width="80"
           ariaLabel="blocks-loading"
