@@ -7,7 +7,7 @@ const ImageGalleryItem = ({ preview, picture, tags }) => {
   const [opened, setOpened] = useState(false);
 
   const toggleModal = () => {
-    setOpened(prevState => !prevState.opened);
+    setOpened(prevState => !prevState);
   };
 
     return (
