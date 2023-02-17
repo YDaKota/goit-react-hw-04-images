@@ -20,7 +20,7 @@ const App = () =>  {
       return;
     }
 
-    (async function fetch() {
+    async function fetch() {
       try {
         setLoading(true);
 
@@ -51,7 +51,8 @@ const App = () =>  {
       } finally {
         setLoading(false);
       }
-    })();
+    };
+    fetch();
   }, [query, page]);
 
   const handleClick = () => {
